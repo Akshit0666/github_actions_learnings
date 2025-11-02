@@ -37,7 +37,7 @@ jobs:
       - name: Build Docker image
         id: build-image
         run: |
-          IMAGE_NAME=myapp
+          IMAGE_NAME=my-app
           DOCKERHUB_TAG=${{ secrets.DOCKERHUB_USERNAME }}/$IMAGE_NAME:latest
           ECR_TAG=${{ steps.ecr-login.outputs.registry }}/$IMAGE_NAME:latest
 
